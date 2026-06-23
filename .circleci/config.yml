@@ -29,11 +29,6 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
-      - run:
-          name: Verify Runtime
-          command: |
-            node -v
-            npm -v
       # DONE: Install dependencies in the the backend API
       - run:
           name: Install API Dependencies
