@@ -14,7 +14,7 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && cd www && eb list && eb use udagram-api-env-node22 && eb deploy && cd ..",
-    "circle:deploy": "npm run circle:build && eb deploy udagram-api-env-node22",
+    "circle:deploy": "npm run circle:build && eb init udagram-api --platform \"Node.js 22 running on 64bit Amazon Linux 2023\" --region eu-central-1 --quiet || true && eb deploy udagram-api-env-node22",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "circle:build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
