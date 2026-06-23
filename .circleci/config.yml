@@ -13,7 +13,12 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '14.15'         
+          node-version: '14.15'
+      # - run:
+      #     name: Install Yarn
+      #     command: |
+      #       npm install -g yarn
+      - aws-cli/setup
       - checkout
       # Use root level package.json to install dependencies in the frontend app
       - run:
@@ -28,22 +33,26 @@ jobs:
       - run:
           name: Install API Dependencies
           command: |
-           echo "TODO: Install dependencies in the the backend API  "
-      # TODO: Lint the frontend
+            echo "Install dependencies in the the backend API  "
+            npm run api:install
+      # DONE: Lint the frontend
       - run:
           name: Front-End Lint
           command: |
-            echo "TODO: Lint the frontend"
-      # TODO: Build the frontend app
+            echo "DONE: Lint the frontend"
+            npm run frontend:lint
+      # DONE: Build the frontend app
       - run:
           name: Front-End Build
           command: |
-            echo "TODO: Build the frontend app"
-      # TODO: Build the backend API      
+            echo "DONE: Build the frontend app"
+            npm run frontend:build
+      # DONE: Build the backend API      
       - run:
           name: API Build
           command: |
-            echo "TODO: Build the backend API"
+            echo "DONE: Build the backend API"
+            npm run api:build
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -57,9 +66,11 @@ jobs:
       - checkout
       - run:
           name: Deploy App
-          # TODO: Install, build, deploy in both apps
+          # DONE: Install, build, deploy in both apps
+          # Use root package.json to orchestrate full deployment
           command: |
-            echo "# TODO: Install, build, deploy in both apps"
+            echo "# DONE: Install, build, deploy in both apps"
+            npm run deploy
             
 workflows:
   udagram:
