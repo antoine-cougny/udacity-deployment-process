@@ -15,3 +15,5 @@ We are using the following infrastructure:
 -   AWS RDS - Postgres Database.
 -   AWS Beanstalk - web server environment.
 -   AWS S3 - static front-end web application.
+
+![Architecture](../screenshots/udagram_general_architecture.png)

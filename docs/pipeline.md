@@ -9,3 +9,5 @@ Note that:
 
 -   The `deploy` job depends on the `build` job and will wait until manually approved.
 
+![Pipeline](../screenshots/udagram_dev_workflow.png)
+
