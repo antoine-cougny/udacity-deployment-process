@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="cqCMqbrcEODlxlvHx116">
+    <mxGraphModel dx="764" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;CI/CD Pipelines on automation server&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="280" x="60" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-13" edge="1" parent="1" source="Bokvl5wnWeWrAw9vcaz1-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Bokvl5wnWeWrAw9vcaz1-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-14" connectable="0" parent="Bokvl5wnWeWrAw9vcaz1-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Commit &amp;amp; Push&amp;nbsp;Code&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1094" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Developers" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-10" edge="1" parent="1" source="Bokvl5wnWeWrAw9vcaz1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="Bokvl5wnWeWrAw9vcaz1-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-17" connectable="0" parent="Bokvl5wnWeWrAw9vcaz1-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;frontend&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0742" y="-1" as="geometry">
+            <mxPoint x="1" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Deploy Job" vertex="1">
+          <mxGeometry height="30" width="120" x="140" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-12" edge="1" parent="1" source="Bokvl5wnWeWrAw9vcaz1-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Bokvl5wnWeWrAw9vcaz1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Build Job" vertex="1">
+          <mxGeometry height="30" width="120" x="140" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-15" edge="1" parent="1" source="Bokvl5wnWeWrAw9vcaz1-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Bokvl5wnWeWrAw9vcaz1-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-16" connectable="0" parent="Bokvl5wnWeWrAw9vcaz1-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Trigger workflow" vertex="1">
+          <mxGeometry relative="1" x="-0.2113" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Source Code Management System" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="S3" vertex="1">
+          <mxGeometry height="80" width="80" x="80" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-11" edge="1" parent="1" source="Bokvl5wnWeWrAw9vcaz1-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="Bokvl5wnWeWrAw9vcaz1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-18" connectable="0" parent="Bokvl5wnWeWrAw9vcaz1-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="backend" vertex="1">
+          <mxGeometry relative="1" x="-0.0858" y="-5" as="geometry">
+            <mxPoint x="-5" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="Beanstalk" vertex="1">
+          <mxGeometry height="80" width="80" x="240" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Github/Gitab" vertex="1">
+          <mxGeometry height="30" width="80" x="270" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="Bokvl5wnWeWrAw9vcaz1-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="CircleCI" vertex="1">
+          <mxGeometry height="30" width="80" x="300" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
