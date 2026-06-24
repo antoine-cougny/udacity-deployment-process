@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-: "${BUCKET_NAME:?BUCKET_NAME environment variable is required}"
+: "${AWS_BUCKET:?AWS_BUCKET environment variable is required}"
 
-aws s3 cp --recursive --acl public-read ./www "s3://${BUCKET_NAME}/"
-aws s3 cp --acl public-read --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./www/index.html "s3://${BUCKET_NAME}/"
+aws s3 cp --recursive --acl public-read ./www "s3://${AWS_BUCKET}/"
+aws s3 cp --acl public-read --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./www/index.html "s3://${AWS_BUCKET}/"
